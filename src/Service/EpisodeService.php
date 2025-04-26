@@ -37,6 +37,8 @@ class EpisodeService
 
     private function getIds($links)
     {
+        $ids = [];
+
         foreach ($links as $link) {
             $ids[] = substr($link, strlen('https://rickandmortyapi.com/api/episode/'));
         }
